@@ -1,0 +1,85 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.30.0-'s-Hertogenbosch">
+  <identifier>Geomatique101.DBO.Reseau_routier_actuel</identifier>
+  <parentidentifier></parentidentifier>
+  <language>FRE</language>
+  <type>dataset</type>
+  <title>Réseau routier actuel</title>
+  <abstract>Couverture (lignes) des segments du réseau routier incluant les odonymes.
+Orientation
+L’orientation des segments de route (sens de numérisation) est adaptée afin de correspondre au sens d’augmentation des adresses.
+Segmentation
+Les tronçons sont segmentés :
+• aux intersections routières;
+• aux limites administratives de municipalités et d’arrondissements;
+• aux changements d’odonymes;
+• aux inversions d’accroissement des adresses;
+• au milieu des segments de route se refermant sur eux-mêmes (suçons);
+• aux changements de produits (p. ex. ortho vs DGE);
+
+Couverture (lignes) des segments du réseau routier incluant les odonymes.
+
+Projection : WGS84 Attributs : NoRte : Numéro de la route ClsFnction : Classification fonctionnelle de la route CaractRte : Caractéristique de la route Odonyme : Toponyme de la route Direction : Direction de la route (0 = 2 directions, 1 = sens unique selon sens de la numérisation, 2 = sens unique selon sens inverse de la numérisation) Ancien_odonyme : Ancien toponyme de la route avant 2012 IntVirGa : Interdiction virage à gauche (0 = aucune interdiction, 1 = interdiction sens de la numérisation, 2 = interdiction sens inverse de la numérisation, 3 = interdiction dans les deux sens) IntVirDr : Interdiction virage à droite (0 = aucune interdiction, 1 = interdiction sens de la numérisation, 2 = interdiction sens inverse de la numérisation, 3 = interdiction dans les deux sens) Vitesse : Vitesse maximale de la route </abstract>
+  <keywords vocabulary="Clés de recherche">
+    <keyword>Avenue</keyword>
+    <keyword>Boulevard</keyword>
+    <keyword>Chaussée</keyword>
+    <keyword>Chemin</keyword>
+    <keyword>Infrastructures</keyword>
+    <keyword>Montée</keyword>
+    <keyword>Odonyme</keyword>
+    <keyword>Place</keyword>
+    <keyword>Rang</keyword>
+    <keyword>Route</keyword>
+    <keyword>Rue</keyword>
+    <keyword>Réseau routier</keyword>
+    <keyword>Tronçon</keyword>
+    <keyword>Voie publique</keyword>
+    <keyword>Transport</keyword>
+  </keywords>
+  <contact>
+    <name>Badradine Laïb</name>
+    <organization>Ville de Rouyn-Noranda</organization>
+    <position>Technicien en géomatique</position>
+    <voice></voice>
+    <fax></fax>
+    <email></email>
+    <role></role>
+  </contact>
+  <links/>
+  <dates>
+    <date value="2010-08-01T00:00:00" type="Created"/>
+    <date value="2012-11-01T00:00:00" type="Published"/>
+    <date value="2020-01-09T00:00:00" type="Revised"/>
+  </dates>
+  <fees></fees>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt>PROJCRS["NAD83 / MTM zone 10",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4269]],CONVERSION["MTM zone 10",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-79.5,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9999,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",304800,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (E(X))",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (N(Y))",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Canada - Quebec west of 78°W; Canada - Ontario - between 79°30'W and 78°W in area to north of 47°N; between 80°15'W and 78°W in area between 46°N and 47°N; between 81°W and 78°W in area south of 46°N."],BBOX[42.26,-81,62.45,-78]],ID["EPSG",32190]]</wkt>
+      <proj4>+proj=tmerc +lat_0=0 +lon_0=-79.5 +k=0.9999 +x_0=304800 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>2835</srsid>
+      <srid>32190</srid>
+      <authid>EPSG:32190</authid>
+      <description>NAD83 / MTM zone 10</description>
+      <projectionacronym>tmerc</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial miny="47.7009169999999969" maxz="0" dimensions="2" minz="0" minx="-79.53357400000000155" maxy="48.60219599999999929" crs="EPSG:32190" maxx="-78.21394800000000203"/>
+    <temporal>
+      <period>
+        <start>2012-11-01T04:00:00Z</start>
+        <end></end>
+      </period>
+    </temporal>
+    <temporal>
+      <period>
+        <start></start>
+        <end></end>
+      </period>
+    </temporal>
+  </extent>
+</qgis>
